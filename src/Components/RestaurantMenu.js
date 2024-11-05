@@ -47,7 +47,7 @@ const RestaurantMenu = () =>{
                 key={Math.random()} 
                 item={rest} 
                 show={index === showIndex ? true:false} 
-                setShow={()=>setShowIndex(index)}
+                setShow={()=>setShowIndex(index === showIndex ? -1 : index)}
                 />
             ))
         } 
